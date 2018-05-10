@@ -1,0 +1,20 @@
+{% extends 'artisttree/base.html' %}
+{% block title %}Posts{% endblock %}
+{% block ajax_active %}active{% endblock %}
+
+{%block body%}
+    <h3 style="padding-left: 40px">Results</h3>
+       {%if post.count > 0%}
+        {% for postdetail in post%}
+
+    <h4 style="padding-left: 50px"><a href="/artisttree/post/{{postdetail.id}}/">{{postdetail.title}}</a></h4>
+        {%endfor%}
+    {%else%}
+            <li>No Result</li>
+    {%endif%}
+
+{%endblock%}
+
+
+
+

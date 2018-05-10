@@ -1,0 +1,504 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Artist Tree</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../../static/main.css" />
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		 <!--
+    Favicons
+    =============================================
+    -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../../static/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../static/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../static/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../static/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../static/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../static/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../static/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../static/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../static/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../static/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../static/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../static/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../static/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../static/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--
+    Stylesheets
+    =============================================
+
+    -->
+    <!-- Default stylesheets-->
+    <link href="../../static/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="../../static/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="../../static/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../static/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="../../static/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="../../static/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../../static/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="../../static/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="../../static/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+	<link href="../../static/css/style.css" rel="stylesheet">
+
+    <link id="color-scheme" href="../../static/css/colors/default.css" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<!-- Header -->
+			<!--<header id="header" class="alt">-->
+				<!--<div class="logo"><a href="../artisttree/front.html">Artist Tree <span></span></a></div>-->
+				<!--<a href="#menu">Menu</a>-->
+			<!--</header>-->
+
+		<!--&lt;!&ndash; Nav &ndash;&gt;-->
+			<!--<nav id="menu">-->
+				<!--<ul class="links">-->
+					<!--<li><a href="front.html">Home</a></li>-->
+					<!--<li><a href="{% url 'artisttree:login_user' %}">Login</a></li>-->
+					<!--<li><a href="{% url 'artisttree:register' %}">Register</a></li>-->
+				<!--</ul>-->
+			<!--</nav>-->
+
+		<!-- Banner -->
+			<section class="banner full">
+				<article>
+					<img src="../../static/images/slide01.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<p></p>
+							<h2>What is Artist Tree?</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="../../static/images/slide02.jpg" alt="" />
+					<div class="inner">
+						<header>
+                        	<p>Artist Tree is a web and mobile platform created for an online community of different artists and different production company. </p>
+							<h2>Artist Tree</h2>
+						</header>
+					</div>
+				</article>
+
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper style2">
+				<div class="inner">
+					<div class="grid-style">
+
+						<div>
+							<div class="boxx">
+								<div class="image fit">
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Login</p>
+
+									</header>
+									<p> </p>
+									<footer class="align-center">
+										<a href="{% url 'artisttree:login_user' %}" class="button alt">Go Login</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div class="boxx">
+								<div class="image fit">
+
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Register</p>
+										<h2></h2>
+									</header>
+									<p></p>
+									<footer class="align-center">
+										<a href="{% url 'artisttree:register' %}" class="button alt">Go Register</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+<hr class="divider-w">
+        <section class="module" id="team">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Meet Our Team</h2>
+                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="mb-sm-20 wow fadeInUp col-sm-3 col-md-4" onclick="wow fadeInUp">
+                <div class="team-item">
+                  <div class="team-image"><img src="../../static/images/j.jpg" alt="Member Photo"/>
+                    <div class="team-detail">
+                      <h5 class="font-alt">Jasmine Pearl Cano</h5>
+                      <p class="font-serif">Being yourself is one of the hardest things because it's scary. You always wonder whether you'll be accepted for who you really are. I decided to call my record 'Inside Out' because that's my motto about life. I don't think you ever succeed at trying to be anyone else but who you truly are.</br><small> Emmy Rossum </small></p>
+                      <div class="team-social"><a href="http://www.facebook.com/jasminepearlcano"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="team-descr font-alt">
+                    <div class="team-name">Jasmine Pearl Cano</div>
+                    <div class="team-role">Developer</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-sm-20 wow fadeInUp col-sm-3 col-md-4" onclick="wow fadeInUp">
+                <div class="team-item">
+                  <div class="team-image"><img src="../../static/images/k.jpg" alt="Member Photo"/>
+                    <div class="team-detail">
+                      <h5 class="font-alt">Good day</h5>
+                      <p class="font-serif">It's important to celebrate your failures as much as your successes. If you celebrate your failures really well, and if you get to the motto and say, 'Wow, I failed, I tried, I was wrong, I learned something,' then you realize you have no fear, and when your fear goes away, you can move the world.</br> Sebastian Thrun</p>
+                      <div class="team-social"><a href="https://www.facebook.com/Fluentnice31"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="team-descr font-alt">
+                    <div class="team-name">Calvin Kyle Cuenco</div>
+                    <div class="team-role">Developer</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-sm-20 wow fadeInUp col-sm-3 col-md-4" onclick="wow fadeInUp">
+                <div class="team-item">
+                  <div class="team-image"><img src="../../static/images/mia.jpg" alt="Member Photo"/>
+                    <div class="team-detail">
+                      <h5 class="font-alt">Hello</h5>
+                      <p class="font-serif">'No one can make you successful; the will to success comes from within.' I've made this my motto. I've internalized it to the point of understanding that the success of my actions and/or endeavors doesn't depend on anyone else, and that includes a possible failure.</br> Fabrizio Moreira</p>
+                      <div class="team-social"><a href="https://www.facebook.com/awesomiaaa"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="team-descr font-alt">
+                    <div class="team-name">Mia Anjanette De Guzman</div>
+                    <div class="team-role">Developer</div>
+                  </div>
+				</div>
+			  </div>
+              <div class="mb-sm-20 wow fadeInUp col-sm-4 col-md-4" onclick="wow fadeInUp">
+                <div class="team-item">
+                  <div class="team-image"><img src="../../static/images/c.jpg" alt="Member Photo"/>
+                    <div class="team-detail">
+                      <h5 class="font-alt">Yes, it's me</h5>
+                      <p class="font-serif">Be Prepared... the meaning of the motto is that a scout must prepare himself by previous thinking out and practicing how to act on any accident or emergency so that he is never taken by surprise.</br> Robert Baden-Powell</p>
+                      <div class="team-social"><a href="https://www.facebook.com/chrisjohn.delacruz.3"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
+                    </div>
+                  </div>
+                    <div class="team-descr font-alt">
+                    <div class="team-name">Chrisjohn Dela Cruz</div>
+                    <div class="team-role">Developer</div>
+                  </div>
+                </div>
+			  </div>
+			 <div class="mb-sm-10 wow fadeInUp col-sm-4 col-md-4" onclick="wow fadeInUp">
+                <div class="team-item">
+                  <div class="team-image"><img src="../../static/images/ok.jpg" alt="Member Photo"/>
+                    <div class="team-detail">
+                      <h5 class="font-alt">Hi</h5>
+                      <p class="font-serif">Take risks;' you don't have a voice if you don't. You have to venture outside your boundaries. That's what life's all about.</br> Kelly Wearstler</p>
+                      <div class="team-social"><a href="https://www.facebook.com/asdfghjkobe"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="team-descr font-alt">
+                    <div class="team-name">Kristoffer Bryant Estepa</div>
+                    <div class="team-role">Developer</div>
+                  </div>
+                </div>
+			  </div>
+			   <div class="mb-sm-10 wow fadeInUp col-sm-4 col-md-4" onclick="wow fadeInUp">
+
+			  </div>
+
+
+            </div>
+          </div>
+        </section>
+		<!-- Two
+			<section id="two" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>OUR TEAM:</p>
+
+					</header>
+
+
+
+
+					// Boxes
+
+						<div class="thumbnails">
+
+							<div class="box">
+								<a href="https://www.facebook.com/jasminepearlcano" class="image fit"><img src="../../static/images/j.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Jasmine Pearl Cano</h3>
+									<p></p>
+									<a href="https://www.facebook.com/jasminepearlcano" class="button fit" data-poptrox="youtube,800x400">Info</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="https://www.facebook.com/Fluentnice31" class="image fit"><img src="../../static/images/k.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Calvin Kyle Cuenco</h3>
+									<p></p>
+									<a href="https://www.facebook.com/Fluentnice31" class="button style2 fit" data-poptrox="youtube,800x400">Info</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="https://www.facebook.com/awesomiaaa" class="image fit"><center><img align="middle" style="width: 340px; height: 350px;" src="../../static/images/mia.jpg" alt="" /></center></a>
+								<div class="inner">
+									<h3>Mia Anjanette De Guzman</h3>
+									<p></p>
+									<a href="https://www.facebook.com/awesomiaaa" class="button style3 fit" data-poptrox="youtube,800x400">Info</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="https://www.facebook.com/chrisjohn.delacruz.3" class="image fit"><img src="../../static/images/c.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Chrisjohn Dela Cruz</h3>
+									<p></p>
+									<a href="https://www.facebook.com/chrisjohn.delacruz.3" class="button style2 fit" data-poptrox="youtube,800x400">Info</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="https://www.facebook.com/asdfghjkobe" class="image fit"><img src="../../static/images/ok.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Kristoffer Bryant Estepa</h3>
+									<p></p>
+									<a href="https://www.facebook.com/asdfghjkobe" class="button fit" data-poptrox="youtube,800x400">Info</a>
+								</div>
+							</div>
+
+						</div>
+
+				</div>
+			</section>
+
+		Three -->
+		 <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="../../static/images/testimonial_bg.jpg">
+          <div class="testimonials-slider pt-140 pb-140">
+            <ul class="slides">
+              <li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="module-icon"><span class="icon-quote"></span></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <blockquote class="testimonial-text font-alt">I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</blockquote>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                      <div class="testimonial-author">
+                        <div class="testimonial-caption font-alt">
+                          <div class="testimonial-title">Jack Woods</div>
+                          <div class="testimonial-descr">SomeCompany INC, CEO</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="module-icon"><span class="icon-quote"></span></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <blockquote class="testimonial-text font-alt">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</blockquote>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                      <div class="testimonial-author">
+                        <div class="testimonial-caption font-alt">
+                          <div class="testimonial-title">Jasmine Pearl Cano</div>
+                          <div class="testimonial-descr">SomeCompany INC, CEO</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="module-icon"><span class="icon-quote"></span></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <blockquote class="testimonial-text font-alt">I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</blockquote>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                      <div class="testimonial-author">
+                        <div class="testimonial-caption font-alt">
+                          <div class="testimonial-title">Adele Snow</div>
+                          <div class="testimonial-descr">SomeCompany INC, CEO</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+		</section>
+		<!---->
+		  <!--<section class="module" id="contact">-->
+          <!--<div class="container">-->
+            <!--<div class="row">-->
+              <!--<div class="col-sm-6 col-sm-offset-3">-->
+                <!--<h2 class="module-title font-alt">Get in touch</h2>-->
+                <!--<div class="module-subtitle font-serif"></div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+              <!--<div class="col-sm-6 col-sm-offset-3">-->
+                <!--<form id="contactForm" role="form" method="post" action="php/contact.php">-->
+                  <!--<div class="form-group">-->
+                    <!--<label class="sr-only" for="name">Name</label>-->
+                    <!--<input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>-->
+                    <!--<p class="help-block text-danger"></p>-->
+                  <!--</div>-->
+                  <!--<div class="form-group">-->
+                    <!--<label class="sr-only" for="email">Email</label>-->
+                    <!--<input class="form-control" type="email" id="email" name="email" placeholder="Your Email*" required="required" data-validation-required-message="Please enter your email address."/>-->
+                    <!--<p class="help-block text-danger"></p>-->
+                  <!--</div>-->
+                  <!--<div class="form-group">-->
+                    <!--<textarea class="form-control" rows="7" id="message" name="message" placeholder="Your Message*" required="required" data-validation-required-message="Please enter your message."></textarea>-->
+                    <!--<p class="help-block text-danger"></p>-->
+                  <!--</div>-->
+                  <!--<div class="text-center">-->
+                    <!--<button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>-->
+                  <!--</div>-->
+                <!--</form>-->
+                <!--<div class="ajax-response font-alt" id="contactFormResponse"></div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+		<!--</section>-->
+
+		<!--
+			<section id="three" class="wrapper style2">
+				<div class="inner">
+					<p>Contact Us:</p>
+							<form method="post" action="#">
+									<div class="row uniform">
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="name" id="name" value="" placeholder="Name" />
+										</div>
+										<div class="6u$ 12u$(xsmall)">
+											<input type="email" name="email" id="email" value="" placeholder="Email" />
+										</div>
+
+										<div class="12u$">
+											<div class="select-wrapper">
+												<select name="category" id="category">
+													<option value="">- Category -</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="4u 12u$(small)">
+											<input type="radio" id="priority-low" name="priority" checked>
+											<label for="priority-low">Low Priority</label>
+										</div>
+										<div class="4u 12u$(small)">
+											<input type="radio" id="priority-normal" name="priority">
+											<label for="priority-normal">Normal Priority</label>
+										</div>
+										<div class="4u$ 12u$(small)">
+											<input type="radio" id="priority-high" name="priority">
+											<label for="priority-high">High Priority</label>
+										</div>
+
+										<div class="6u 12u$(small)">
+											<input type="checkbox" id="copy" name="copy">
+											<label for="copy">Email me a copy of this message</label>
+										</div>
+										<div class="6u$ 12u$(small)">
+											<input type="checkbox" id="human" name="human" checked>
+											<label for="human">I am a human and not a robot</label>
+										</div>
+
+										<div class="12u$">
+											<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+										</div>
+
+										<div class="12u$">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" /></li>
+												<li><input type="reset" value="Reset" class="alt" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+				</div>
+			</section>
+
+-->
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Artist Tree. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../../static/js/jquery.min.js"></script>
+			<script src="../../static/js/jquery.scrollex.min.js"></script>
+			<script src="../../static/js/skel.min.js"></script>
+			<script src="../../static/js/util.js"></script>
+			<script src="../../static/js/main.js"></script>
+			<script src="../../static/js/main (3).js"></script>
+			<script src="../../static/js/main (2).js"></script>
+
+	</body>
+</html>

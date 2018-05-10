@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+{% extends 'artisttree/base_visitor.html' %}
+{% block title %}Register{% endblock %}
+{% block register_active %}active{% endblock %}
+
+{% block body %}
+
+<html>
+	<head>
+        <title>Artist Tree</title>
+        {% load staticfiles %}
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'main.css' %}" />
+    </head>
+<body>
+
+<div style="width: 135%; padding-left: 20%; margin: 50px;" class="container-fluid">
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Register for an Account</h3>
+                    {% if error_message %}
+                        <p><strong>{{ error_message }}</strong></p>
+                    {% endif %}
+                    <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% include 'artisttree/form_template.html' %}
+                        {{form2}}
+
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    Already have an account? <a href="{% url 'artisttree:login_user' %}">Click here</a> to log in.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="http://www.twitter.com" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="http://www.facebook.com" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="http://www.instagram.com" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="http://www.envelope.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Artist Tree. All rights reserved.
+				</div>
+            </footer>
+
+<!-- Scripts -->
+    <script>
+        function validate(){
+        var inp = document.getElementById('id_profile_pic');
+        if (inp.files.length == 0){
+            alert ("ashdgajsd")
+        inp.focus();
+            return false;
+        }
+    </script>
+			<script src="../../static/js/jquery.min.js"></script>
+			<script src="../../static/js/jquery.scrollex.min.js"></script>
+			<script src="../../static/js/skel.min.js"></script>
+			<script src="../../static/js/util.js"></script>
+			<script src="../../static/js/main.js"></script>
+</body>
+</html>
+{% endblock %}
+
